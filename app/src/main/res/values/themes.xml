@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="Theme.ControllerApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Fullscreen -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- Remove padding from system insets -->
+        <item name="android:fitsSystemWindows">false</item>
+
+        <!-- Transparent bars -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+</resources>

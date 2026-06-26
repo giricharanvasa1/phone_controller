@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- ================= SHOULDER BUTTONS (OVAL) ================= -->
+
+    <!-- L1 -->
+    <TextView
+        android:id="@+id/btnL1"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="L1"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_oval"/>
+
+    <!-- L2 -->
+    <TextView
+        android:id="@+id/btnL2"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="L2"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_oval"/>
+
+    <!-- R2 -->
+    <TextView
+        android:id="@+id/btnR2"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="R2"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_oval"/>
+
+    <!-- R1 -->
+    <TextView
+        android:id="@+id/btnR1"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="R1"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_oval"/>
+
+    <!-- ================= LEFT FACE BUTTONS (SPACED & BALANCED) ================= -->
+
+    <!-- UP (moved down slightly) -->
+    <TextView
+        android:id="@+id/btnLUp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="270dp"
+        android:gravity="center"
+        android:text="↑"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_circle"/>
+
+    <!-- LEFT -->
+    <TextView
+        android:id="@+id/btnLLeft"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="220dp"
+        android:gravity="center"
+        android:text="←"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_circle"/>
+
+    <!-- RIGHT -->
+    <TextView
+        android:id="@+id/btnLRight"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="220dp"
+        android:gravity="center"
+        android:text="→"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_circle"/>
+
+    <!-- DOWN -->
+    <TextView
+        android:id="@+id/btnLDown"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="170dp"
+        android:gravity="center"
+        android:text="↓"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_circle"/>
+
+    <!-- ================= RIGHT FACE BUTTONS (SAME SPACING LOGIC) ================= -->
+
+    <!-- TRIANGLE (moved down) -->
+    <TextView
+        android:id="@+id/btnTriangle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="270dp"
+        android:gravity="center"
+        android:text="△"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_circle"/>
+
+    <!-- SQUARE (more left space) -->
+    <TextView
+        android:id="@+id/btnSquare"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="220dp"
+        android:gravity="center"
+        android:text="□"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_circle"/>
+
+    <!-- CIRCLE (more right space) -->
+    <TextView
+        android:id="@+id/btnCircle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="220dp"
+        android:gravity="center"
+        android:text="○"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_circle"/>
+
+    <!-- CROSS -->
+    <TextView
+        android:id="@+id/btnCross"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="170dp"
+        android:gravity="center"
+        android:text="✕"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_circle"/>
+
+    <!-- ================= LEFT JOYSTICK ================= -->
+
+    <FrameLayout
+        android:id="@+id/leftJoystick"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp">
+
+        <View
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/joystick_base"/>
+
+        <View
+            android:id="@+id/leftKnob"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:background="@drawable/joystick_knob"/>
+    </FrameLayout>
+
+    <!-- ================= MOUSE PAD ================= -->
+
+    <View
+        android:id="@+id/mousePad"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/mousepad_rect"/>
+
+    <!-- ================= RIGHT JOYSTICK ================= -->
+
+    <FrameLayout
+        android:id="@+id/rightJoystick"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
+
+        <View
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/joystick_base"/>
+
+        <View
+            android:id="@+id/rightKnob"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:background="@drawable/joystick_knob"/>
+    </FrameLayout>
+
+</FrameLayout>

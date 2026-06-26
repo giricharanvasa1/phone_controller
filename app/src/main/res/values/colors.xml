@@ -1,0 +1,6 @@
+<resources>
+    <color name="bg_dark">#121212</color>
+    <color name="joystick_base">#2A2A2A</color>
+    <color name="joystick_knob">#E0E0E0</color>
+    <color name="accent_blue">#4FC3F7</color>
+</resources>
